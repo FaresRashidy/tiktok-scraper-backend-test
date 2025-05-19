@@ -1,5 +1,6 @@
 {
   "name": "vite-project-backend",
+  "type": "module",
   "version": "1.0.0",
   "main": "src/app.js",
   "scripts": {

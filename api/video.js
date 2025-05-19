@@ -15,8 +15,10 @@ export default async function handler(req, res) {
     res.status(200).json({ success: true, data: videoData });
   } catch (error) {
     console.error("Error fetching video data:", error);
-    res
-      .status(500)
-      .json({ success: false, error: "Failed to fetch video data" });
+    res.status(500).json({
+      success: false,
+      error: "Failed to fetch video data",
+      details: error.message || error.toString(),
+    });
   }
 }
