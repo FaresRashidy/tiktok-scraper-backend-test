@@ -8,6 +8,7 @@
     "dev": "nodemon src/app.js"
   },
   "dependencies": {
+    "cheerio": "^1.0.0",
     "express": "^5.1.0",
     "ruhend-scraper": "^9.0.1"
   },
